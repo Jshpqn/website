@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+.nav {
+    box-shadow: 0px 1px 25px rgb(61, 61, 61);
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .list {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 20px;
+
+    margin-top: 60px;
+}
+
+.nav .list a {
+    text-decoration: none;
+
+    margin-right: 25px;
+
+    color: rgb(40, 42, 45);
+}
+
+.nav .logo img {
+    width: 150px;
+    margin-left: 60px;
+}
+
+.nav .list .home{
+    text-decoration-line: underline;
+    text-decoration-color: black;
+    text-decoration-style: solid;
+    text-underline-offset: 12.5px;
+    text-decoration-thickness: 5px;
+}

@@ -1,0 +1,124 @@
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-gallery>li {
+    flex-basis: 400px;
+    /* width: 350px; */
+}
+
+.image-gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.gallery {
+    width: 80%;
+    height: 100%;
+
+    margin-left: 10%;
+    text-align: center;
+}
+
+.gallery .title {
+    padding: 50px;
+}
+
+.more {
+    margin-top: 5px;
+    padding: 40px;
+
+    text-align: center;
+}
+
+.more a {
+    background-color: #30343746;
+    padding: 20px 35px 20px 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.follow {
+    width: 80%;
+
+    margin-left: 10%;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.followus {
+    padding: 20px;
+}
+
+.follow img {
+    width: 200px;
+    margin: -5px;
+}
+
+.con-info li {
+    display: flex;
+
+    padding-bottom: 20%;
+}
+
+.naming {
+    padding-right: 10px;
+}
+
+.headline {
+    height: 800px;
+
+    display: flex;
+    justify-content: space-around;
+
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    margin-top: 350px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.btns {
+    margin-top: 50px;
+}
+
+.viewbtn {
+    background-color: #ffffff;
+    padding: 20px;
+    font-size: 25px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.btns li {
+    margin-bottom: 50px;
+}
+
+.hl {
+    width: 25%;
+    margin-left: 150px;
+}
+
+.headline .pictures img {
+    width: 700px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
