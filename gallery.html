@@ -8,53 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <meta property="twitter:card" content="summary_large_image" />
-    <style data-tag="reset-style-sheet">
-        html {
-            line-height: 1.15;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        * {
-            box-sizing: border-box;
-            border-width: 0;
-            border-style: solid;
-        }
-
-        html {
-            scroll-behavior: smooth
-        }
-    </style>
-    <style data-tag="default-style-sheet">
-        html {
-            font-family: Inter;
-            font-size: 16px;
-        }
-
-        body {
-            font-weight: 400;
-            font-style: normal;
-            text-decoration: none;
-            text-transform: none;
-            letter-spacing: normal;
-            line-height: 1.15;
-            color: var(--dl-color-gray-black);
-            background-color: var(--dl-color-gray-white);
-
-        }
-    </style>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
         data-tag="font" />
 
-    <link rel="stylesheet" href="css/gallery_nav.css">
     <link rel="stylesheet" href="css/gallery.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toTop.css">
+    <link rel="stylesheet" href="css/default.css" data-tag="default-style-sheet">
+    <link rel="stylesheet" href="css/reset.css" data-tag="reset-style-sheet">
 
     <title>Document</title>
 </head>
@@ -119,6 +81,8 @@
                 </div>
             </div>
         </header>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
         <div class="body">
             <div class="tabs" id="tabbed-nav">
@@ -278,11 +242,11 @@
                     <div class="gallery-container15">
                         <div class="gallery-product-container">
                             <span class="gallery-text12">Explore</span>
-                            <span class="gallery-text13">Home</span>
-                            <span class="gallery-text14">Portfolio</span>
-                            <span class="gallery-text15">Services</span>
-                            <span class="gallery-text16">Contact Us</span>
-                            <span class="gallery-text17">About Us</span>
+                            <span class="gallery-text13"><a href="index.html">Home</a></span>
+                            <span class="gallery-text14"><a href="gallery.html">Portfolio</a></span>
+                            <span class="gallery-text15"><a href="service.html">Services</a></span>
+                            <span class="gallery-text16"><a href="contact.html">Contact Us</a></span>
+                            <span class="gallery-text17"><a href="about.html">About</a></span>
                         </div>
                         <div class="gallery-company-container">
                             <span class="gallery-text18">Support</span>
@@ -317,18 +281,7 @@
     </div>
 
     <script src="js/gallery.js"></script>
-    <script data-section-id="header" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.js"></script>
-    <script defer
-        src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
-        integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
-        data-cf-beacon='{"rayId":"7ce637399c84096a","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}'
-        crossorigin="anonymous"></script>
+    <script src="js/toTop.js"></script>
 
 </body>
 

@@ -1,0 +1,17 @@
+html {
+    line-height: 1.15;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+}
+
+html {
+    scroll-behavior: smooth
+}

@@ -8,55 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <meta property="twitter:card" content="summary_large_image" />
-    <style data-tag="reset-style-sheet">
-        html {
-            line-height: 1.15;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        * {
-            box-sizing: border-box;
-            border-width: 0;
-            border-style: solid;
-        }
-
-        html {
-            scroll-behavior: smooth
-        }
-    </style>
-    <style data-tag="default-style-sheet">
-        html {
-            font-family: Inter;
-            font-size: 16px;
-        }
-
-        body {
-            font-weight: 400;
-            font-style: normal;
-            text-decoration: none;
-            text-transform: none;
-            letter-spacing: normal;
-            line-height: 1.15;
-            color: var(--dl-color-gray-black);
-            background-color: var(--dl-color-gray-white);
-
-        }
-    </style>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
         data-tag="font" />
 
-
-    <link rel="stylesheet" href="css/contact_nav.css">
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/toTop.css">
+    <link rel="stylesheet" href="css/default.css" data-tag="default-style-sheet">
+    <link rel="stylesheet" href="css/reset.css" data-tag="reset-style-sheet">
+    <title>Hearthwyn Photosnap | Contact Us</title>
 </head>
 
 <body>
@@ -120,6 +81,8 @@
             </div>
         </header>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
         <div class="contact-container">
             <div class="contact-container01">
                 <div class="contact-container02">
@@ -130,20 +93,22 @@
                     <div class="contact-container03">
                         <form action="https://formcarry.com/s/6oD2s_8tkp" method="POST" class="contact-form">
                             <div class="contact-container04">
-                                <input type="text" required placeholder="First Name *"
-                                    class="contact-textinput input" name="first name"/>
-                                <input type="text" placeholder="Last Name (Optional)"
-                                    class="contact-textinput1 input" name="second name"/>
+                                <input type="text" required placeholder="First Name *" class="contact-textinput input"
+                                    name="first name" />
+                                <input type="text" placeholder="Last Name (Optional)" class="contact-textinput1 input"
+                                    name="second name" />
                             </div>
                             <div class="contact-container05">
-                                <input type="text" required placeholder="Email *" class="contact-textinput2 input" name="email"/>
+                                <input type="email" required placeholder="Email *" class="contact-textinput2 input"
+                                    name="email" />
                                 <select class="contact-select">
                                     <option value="Feedback" type="text" name="anotherInput" selected>Feedback</option>
                                     <option value="Inquire" type="anotherInput" name="anotherInput">Inquire</option>
                                 </select>
                             </div>
                             <div class="contact-container06">
-                                <textarea placeholder="Message..." class="contact-textarea textarea" name="message"></textarea>
+                                <textarea placeholder="Message..." class="contact-textarea textarea"
+                                    name="message"></textarea>
                                 <button class="contact-button button" type="submit">Send</button>
                             </div>
                         </form>
@@ -201,11 +166,11 @@
                     <div class="contactus-container15">
                         <div class="contactus-product-container">
                             <span class="contactus-text12">Explore</span>
-                            <span class="contactus-text13">Home</span>
-                            <span class="contactus-text14">Portfolio</span>
-                            <span class="contactus-text15">Services</span>
-                            <span class="contactus-text16">Contact Us</span>
-                            <span class="contactus-text17">About Us</span>
+                            <span class="contactus-text13"><a href="index.html">Home</a></span>
+                            <span class="contactus-text14"><a href="gallery.html">Portfolio</a></span>
+                            <span class="contactus-text15"><a href="service.html">Services</a></span>
+                            <span class="contactus-text16"><a href="contact.html">Contact Us</a></span>
+                            <span class="contactus-text17"><a href="about.html">About</a></span>
                         </div>
                         <div class="contactus-company-container">
                             <span class="contactus-text18">Support</span>
@@ -216,12 +181,8 @@
                     <div class="contactus-container16">
                         <div class="contactus-contact">
                             <span class="contactus-text21">Contact Info</span>
-                            <span class="contactus-text22"> <span class="contact-footer-icon"><svg
-                                        viewBox="0 0 1024 1024" class="contact-footer">
-                                        <path
-                                            d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z">
-                                        </path>
-                                    </svg></span> herricoherrera@gmail.com</span>
+                            <span class="contactus-text22"> <span class="contact-footer-icon"></span>
+                                herricoherrera@gmail.com</span>
                             <span class="contactus-text23">+63936 311 5297</span>
                         </div>
                         <div class="contactus-socials">
@@ -244,9 +205,7 @@
         </footer>
     </div>
 
-    <!--
-        <script data-section-id="header" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-    -->
+    <script src="js/toTop.js"></script>
 
 </body>
 

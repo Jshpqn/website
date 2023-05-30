@@ -996,3 +996,8 @@
     justify-content: center;
     margin-bottom: 1%;
 }
+
+.gallery-product-container a {
+    color: white;
+    text-decoration: none;
+}

@@ -6,223 +6,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/white_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        data-tag="font" />
 
-    <link rel="stylesheet" href="css/service_nav.css">
     <link rel="stylesheet" href="css/service.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toTop.css">
+    <link rel="stylesheet" href="css/default.css" data-tag="default-style-sheet">
+    <link rel="stylesheet" href="css/reset.css" data-tag="reset-style-sheet">
     <title>Services</title>
-
-    <style data-section-id="dropdown">
-        [data-thq="thq-dropdown"]:hover>[data-thq="thq-dropdown-list"] {
-            display: flex;
-        }
-
-        [data-thq="thq-dropdown"]:hover>div [data-thq="thq-dropdown-arrow"] {
-            transform: rotate(90deg);
-        }
     </style>
 </head>
 
 <body>
-    <div class="nav">
-        <ul>
-            <li class="logo">
-                <img src="images/test_logo.png" alt="">
-            </li>
-            <li class="list">
-                <a href="home.html">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="service.html" class="service">Services</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="about.html">About Us</a>
-            </li>
-        </ul>
+    <div class="service-container">
+        <header data-role="Header" class="service-header">
+            <img src="images/test_logo.png" alt="image" class="service-image" />
+            <div class="service-nav">
+                <nav class="navigation-links-nav navigation-links-root-class-name17">
+                    <span class="navigation-links-text"><span> <a href="index.html" class="navlink">Home</a>
+                        </span></span>
+                    <span class="navigation-links-text1"><span> <a href="gallery.html" class="navlink">Portfolio</a>
+                        </span></span>
+                    <span class="navigation-links-text2"><span> <a href="service.html" class="navlink">Services</a>
+                        </span></span>
+                    <span class="navigation-links-text3">
+                        <span> <a href="contact.html" class="navlink">Contact Us</a> </span>
+                    </span>
+                    <span class="navigation-links-text4"><span> <a href="about.html" class="navlink">About Us</a>
+                        </span></span>
+                </nav>
+            </div>
+            <div data-role="BurgerMenu" class="service-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="service-icon">
+                    <path
+                        d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                    </path>
+                </svg>
+            </div>
+            <div data-role="MobileMenu" class="service-mobile-menu">
+                <div class="service-nav1">
+                    <div class="service-container01">
+                        <img alt="image" src="images/test_logo.png" class="service-image1" />
+                        <div data-role="CloseMobileMenu" class="service-close-mobile-menu">
+                            <svg viewBox="0 0 1024 1024" class="service-icon02">
+                                <path
+                                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <nav class="navigation-links-nav navigation-links-root-class-name18">
+                        <span class="navigation-links-text"><span> <a href="index.html" class="navlink">Home</a>
+                            </span></span>
+                        <span class="navigation-links-text1"><span> <a href="gallery.html" class="navlink">Portfolio</a>
+                            </span></span>
+                        <span class="navigation-links-text2"><span> <a href="service.html" class="navlink">Services</a>
+                            </span></span>
+                        <span class="navigation-links-text3">
+                            <span> <a href="contact.html" class="navlink">Contact Us</a> </span>
+                        </span>
+                        <span class="navigation-links-text4"><span> <a href="about.html" class="navlink">About Us</a>
+                            </span></span>
+                    </nav>
+                </div>
+                <div><svg viewBox="0 0 602.2582857142856 1024" class="service-icon08">
+                        <path
+                            d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <footer class="service-footer">
+            <div class="service-container14">
+                <div class="service-logo">
+                    <img src="images/white_logo.png" alt="image" class="service-image4" />
+                    <span class="service-text11">Capture It All</span>
+                </div>
+                <div class="service-links-container">
+                    <div class="service-container15">
+                        <div class="service-product-container">
+                            <span class="service-text12">Explore</span>
+                            <span class="service-text13"><a href="index.html">Home</a></span>
+                            <span class="service-text14"><a href="gallery.html">Portfolio</a></span>
+                            <span class="service-text15"><a href="service.html">Services</a></span>
+                            <span class="service-text16"><a href="contact.html">Contact Us</a></span>
+                            <span class="service-text17"><a href="about.html">About</a></span>
+                        </div>
+                        <div class="service-company-container">
+                            <span class="service-text18">Support</span>
+                            <span class="service-text19">Terms Of Services</span>
+                            <span class="service-text20">Privacy Policy</span>
+                        </div>
+                    </div>
+                    <div class="service-container16">
+                        <div class="service-contact">
+                            <span class="service-text21">Contact Info</span>
+                            <span class="service-text22"> <span class="contact-footer-icon"></span>
+                                herricoherrera@gmail.com</span>
+                            <span class="service-text23">+63936 311 5297</span>
+                        </div>
+                        <div class="service-socials">
+                            <span class="service-text24">Follow Us</span>
+                            <div class="service-icon-group1">
+                                <svg viewBox="0 0 602.2582857142856 1024" class="service-icon18">
+                                    <path
+                                        d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-separator"></div>
+            <span class="service-text25">
+                © 2023 Hearthwyn Photosnap, All Rights Reserved.
+            </span>
+        </footer>
     </div>
 
-    <div class="body">
-        
-        </div>
-        <!--
-            <div class="shoot">
-            <h1 class="title">Pre-Shoot</h1>
-            <ul class="services">
-                <li class="card">
-                    <div class="image">
-                        <a href="">
-                            <img src="images/baby_shoot/babyshoot-1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <p>Baby Shoot</p>
-                        <hr>
-                        <p>Include: </p>
-                        <p>P 2,000</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image">
-                        <a href="">
-                            <img src="images/pre-debut/predebut-1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <p>Pre-Debut</p>
-                        <hr>
-                        <p>Include: </p>
-                        <p>P 2,500</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image">
-                        <a href="">
-                            <img src="images/pre-birthday/prebirthday-1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <p>Pre-Birthday</p>
-                        <hr>
-                        <p>include: </p>
-                        <p>P 2,000</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image">
-                        <a href="">
-                            <img src="images/pre-nup/prenup-1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <p>Pre-Nup</p>
-                        <hr>
-                        <p>include: </p>
-                        <p>P 3,000</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="event">
-            <h1 class="title">Event Coverage</h1>
-            <ul class="services">
-                <li class="card">
-                    <div class="image">
-                        <a href="">
-                            <img src="images/empty.png" alt="">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <p>Birthday</p>
-                        <hr>
-                        <p>DESCRIPTION</p>
-                        <p>P 2,500</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image">
-                        <a href="">
-                            <img src="images/empty.png" alt="">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <p>Wedding</p>
-                        <hr>
-                        <p>DESCRIPTION</p>
-                        <p>P 3,500</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image">
-                        <a href="">
-                            <img src="images/empty.png" alt="">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <p>Debut</p>
-                        <hr>
-                        <p>DESCRIPTION</p>
-                        <p>P 3,500</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image">
-                        <a href="">
-                            <img src="images/empty.png" alt="">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <p>Chirstening</p>
-                        <hr>
-                        <p>DESCRIPTION</p>
-                        <p>P 2,500</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        -->
-
-    </div>
-
-    <div class="root">
-        <div class="footer">
-            <div class="logo">
-                <ul>
-                    <li>
-                        <img src="images/white_logo.png" alt="">
-                    </li>
-                    <li>
-                        <p>To free the moment that you are the happiest and
-                            make it possible for you to look back at it.</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="explore">
-                <ul>
-                    <li>
-                        <h3>Explore</h3>
-                    </li>
-                    <li>
-                        <a href="home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="service.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="social-media">
-                <ul>
-                    <li>
-                        <h3>Social Media</h3>
-                    </li>
-                    <li>
-                        <a href="">Facebook</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="location">
-                <ul>
-                    <li>
-                        <h3>Visit Us</h3>
-                    </li>
-                    <li>
-                        <a href="">San Rafael, Baruya 2005 Lubao, Philippines</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>©Hearthwyn PhotoSnap. All Right Reserve</p>
-        </div>
-    </div>
-
-    <script src="js/services.js"></script>
+    <script src="js/toTop.js"></script>
 </body>
 
 </html>
