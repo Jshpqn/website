@@ -1042,6 +1042,7 @@
     width: 100%;
     display: flex;
     padding: var(--dl-space-space-twounits);
+    padding-top: 100px;
     position: relative;
     text-align: center;
     align-items: center;
