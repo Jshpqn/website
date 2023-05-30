@@ -128,23 +128,23 @@
                         <br />
                     </h1>
                     <div class="contact-container03">
-                        <form class="contact-form">
+                        <form action="https://formcarry.com/s/6oD2s_8tkp" method="POST" class="contact-form">
                             <div class="contact-container04">
                                 <input type="text" required placeholder="First Name *"
-                                    class="contact-textinput input" />
+                                    class="contact-textinput input" name="first name"/>
                                 <input type="text" placeholder="Last Name (Optional)"
-                                    class="contact-textinput1 input" />
+                                    class="contact-textinput1 input" name="second name"/>
                             </div>
                             <div class="contact-container05">
-                                <input type="text" required placeholder="Email *" class="contact-textinput2 input" />
+                                <input type="text" required placeholder="Email *" class="contact-textinput2 input" name="email"/>
                                 <select class="contact-select">
-                                    <option value="Feedback" selected>Feedback</option>
-                                    <option value="Inquire">Inquire</option>
+                                    <option value="Feedback" type="text" name="anotherInput" selected>Feedback</option>
+                                    <option value="Inquire" type="anotherInput" name="anotherInput">Inquire</option>
                                 </select>
                             </div>
                             <div class="contact-container06">
-                                <textarea placeholder="Message..." class="contact-textarea textarea"></textarea>
-                                <button class="contact-button button">Send</button>
+                                <textarea placeholder="Message..." class="contact-textarea textarea" name="message"></textarea>
+                                <button class="contact-button button" type="submit">Send</button>
                             </div>
                         </form>
                     </div>
@@ -244,18 +244,9 @@
         </footer>
     </div>
 
-    <script data-section-id="header" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.js"></script>
-    <script defer
-        src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
-        integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
-        data-cf-beacon='{"rayId":"7ce637399c84096a","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}'
-        crossorigin="anonymous"></script>
+    <!--
+        <script data-section-id="header" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+    -->
 
 </body>
 
