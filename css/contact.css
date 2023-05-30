@@ -82,7 +82,7 @@
 }
 
 .contactus-image {
-    width: var(--dl-size-size-large);
+    width: 200px;
     object-fit: cover;
 }
 
