@@ -1138,3 +1138,15 @@
     font-style: normal;
     font-weight: 700;
 }
+
+.more {
+    margin-bottom: var(--dl-space-space-twounits);
+}
+
+.more a {
+    color: white;
+    text-decoration: none;
+    background-color: #272829d0;
+
+    padding: var(--dl-space-space-unit);
+}
