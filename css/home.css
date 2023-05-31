@@ -494,6 +494,11 @@
     text-decoration: none;
 }
 
+.home-company-container a {
+    color: white;
+    text-decoration: none;
+}
+
 .home-text12 {
     color: rgb(255, 255, 255);
     font-weight: 700;
